@@ -15,32 +15,56 @@ print("I expect it to be 3")
  let integerDivisionResult = 10 / 3
  print(integerDivisionResult)
 // Now create two constants, double10 and double3, set to 10 and 3, and declare their types as Double values. Declare a final constant divisionResult equal to the result of double10 divided by double3. Print the value of divisionResult. How does this differ from the value when using integer division?
-let double10:(double) = 10
-let double3:double = 3
+let double10: Double = 10
+let double3: Double = 3
 
 /* Given the value pi (3.1415927), create a radius constant with a value of 5.0, then calculate the diameter and circumference of the circle using the following equations, and print the results:
 
 diameter = 2 * radius
 
 circumference = 2 * pi * radius. */
-let radius = 5
+let radius: Double = 5
 let diameter = 2 * radius
-let circumference = 2 * pi * radius
-let pi = 3.1415927
+let pi: Double = 3.1415927
+let circumference: Double = 2 * pi * radius
 
-
+print(radius)
+print(diameter)
+print(circumference)
+print(pi)
 // Your fitness tracker keeps track of users' heart rate, but you might also want to display their average heart rate over the last hour. Create three constants, heartRate1, heartRate2, and heartRate3. Give each constant a different value between 60 and 100. Create a constant addedHR equal to the sum of all three heart rates. Now create a constant called averageHR that equals addedHR divided by 3 to get the average. Print the result.
-
-
+let heartRate1 = 70
+let heartRate2 = 80
+let heartRate3 = 90
+print(heartRate1)
+print(heartRate2)
+print(heartRate3)
+let averageHR = heartRate1 * heartRate2 * heartRate3
+print(averageHR)
 // Now create three more constants, heartRate1D, heartRate2D, and heartRate3D, equal to the same values as heartRate1, heartRate2, and heartRate3. These new constants should be of type Double. Create a constant addedHRD equal to the sum of all three heart rates. Create a constant called averageHRD that equals the addedHRD divided by 3 to get the average of your new heart rate constants. Print the result. Does this differ from your previous average? Why or why not?
-
+let heartRate1D = 70
+let heartRate2D = 80
+let heartRate3D = 90
+let addedHRD = heartRate1D + heartRate2D + heartRate3D
+let averageHRD = addedHRD / 3
+print(averageHRD)
+//No, its the same numbers
 
 // Imagine that partway through the day a user has taken 3,467 steps out of the 10,000 step goal. Create constants steps and goal. Both will need to be of type Double so that you can perform accurate calculations. steps should be assigned the value 3,467, and goal should be assigned 10,000. Create a constant percentOfGoal that equals an expression that evaluates to the percent of the goal that has been achieved so far.
+let steps1: Double = 3467
+let goal: Double = 10000
+let percentOfGoal: Double = steps1/goal * 100
+print(percentOfGoal)
 
 
 // Declare a variable whose value begins at 10. Using addition, update the value to 15 using the compound assignment operator. Using multiplication, update the value to 30 using compound assignment. Print out the variable's value after each assignment.
+var math1 = 10
+print(math1)
+math1 += 5
+print(math1)
 
-
+math1 *= 2
+print(math1)
 /* Create a variable called piggyBank that begins at 0. You will use this to keep track of money you earn and spend. For each point below, use the right compound assignment operator to update the balance in your piggy bank.
 
 Your neighbor gives you 10 dollars for mowing her lawn
@@ -50,36 +74,47 @@ You triple what's left in your piggy bank by washing windows
 You spend 3 dollars at a convenience store
 
 Print the balance of your piggy bank after each step. */
-
-
+var piggyBank = 0
+piggyBank += 10
+piggyBank += 20
+piggyBank /= 2
+piggyBank *= 3
+piggyBank -= 3
+print(piggyBank)
 // The most basic feature of your fitness tracking app is counting steps. Create a variable steps and set it equal to 0. Then increment its value by 1 to simulate a user taking a step.
-
+var steps = 0
+steps += 1
 
 /* In addition to tracking steps, your fitness tracking app tracks distance traveled. Create a variable distance of type Double and set it equal to 50. This will represent the user having traveled 50 feet.
 
 You decide, however, to display the distance in meters. 1 meter is approximately equal to 3 feet. Use a compound assignment operator to convert distance to meters. Print the result. */
-
+var distance: Double = 50
+distance /= 3
+print(distance)
 
 // Print out what you think 10 + 2 * 5 evaluates to. Then print out the actual expression (i.e. print(10 + 2 * 5))
-
-
+print("20")
+print(10 + 2 * 5)
 // In a separate print statement, add in the necessary parentheses so that addition takes place before multiplication.
-
+print((10 + 2) * 5)
 // Print out what you think 4 * 9 - 6 / 2 evaluates to. Then print out the actual expression.
-
-
+print("33")
+print(4 * 9 - 6 / 2)
 // In a separate print statement, add in the necessary parentheses so that the subtraction is prioritized over the multiplication and division.
-
+print(4 * (9 - 6) / 2)
 
 // If you completed the Fitness Calculations exercise, you calculated an average heart rate to display to the user. However, using proper order of operations you can do this in fewer steps. Create three separate heart rate constants, all of type Double, with values between 60 and 100. Then create a constant equal to the average heart rate. If you use correct order of operations you can do the heart calculation in one line.
-
-
+let heartRate1A = 70
+let heatRate2A = 80
+let heartRate3A = 90
+let averageHRA = (70 + 80 + 90) / 3
+print(averageHRA)
 // One feature you might want to give users is to display their current body temperature. Create a constant tempInFahrenheit equal to 98.6.
-
+let tempInFahrenheit = 98.6
 
 // You may want to also show the temperature in celsius. You can convert fahrenheit to celsius by taking tempInFahrenheit and subtracting 32, then multiplying the result by (5.0/9.0). Create a constant tempInCelsius that calculates in one line the temperature in celsius.
-
-
+let tempInCelsius = (tempInFahrenheit - 32) * (5.0 / 9.0)
+print(tempInCelsius)
 // Create an integer constant x with a value of 10, and a double constant y with a value of 3.2. Create a constant multipliedAsIntegers equal to x times y. Does this compile? If not, fix it by converting your Double to an Int in the mathematical expression. Print the result.
 
 
