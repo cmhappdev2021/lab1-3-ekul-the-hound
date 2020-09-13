@@ -53,7 +53,7 @@ print(averageHRD)
 // Imagine that partway through the day a user has taken 3,467 steps out of the 10,000 step goal. Create constants steps and goal. Both will need to be of type Double so that you can perform accurate calculations. steps should be assigned the value 3,467, and goal should be assigned 10,000. Create a constant percentOfGoal that equals an expression that evaluates to the percent of the goal that has been achieved so far.
 let steps1: Double = 3467
 let goal: Double = 10000
-let percentOfGoal: Double = steps1/goal * 100
+var percentOfGoal: Double = steps1/goal * 100
 print(percentOfGoal)
 
 
@@ -116,16 +116,20 @@ let tempInFahrenheit = 98.6
 let tempInCelsius = (tempInFahrenheit - 32) * (5.0 / 9.0)
 print(tempInCelsius)
 // Create an integer constant x with a value of 10, and a double constant y with a value of 3.2. Create a constant multipliedAsIntegers equal to x times y. Does this compile? If not, fix it by converting your Double to an Int in the mathematical expression. Print the result.
-
-
-// Create a constant multipliedAsDoubles equal to x times y, but this time convert the Int to a Double in the expression. Print the result.
-
-
+let x: Double = 10
+let y: Double = 3.2
+let multipliedAsIntegers = x * y
+print(multipliedAsIntegers)
+// Create a constant multipliedAsD oubles equal to x times y, but this time convert the Int to a Double in the expression. Print the result.
+let multipliedAsDoubles = x * y
+print(multipliedAsDoubles)
 // Are the values of multipliedAsIntegers and multipliedAsDoubles different? Print a statement to the console explaining why.
-
+print("no, because  they are the same numbers")
 
 // If you completed the Fitness Calculations exercise, you calculated the percent of the daily step goal that a user has achieved. However, you did this by having steps be of type Double. But you can't really track a partial step, so steps should probably be of type Int. Go ahead and declare steps as type Int and give it a value between 500 and 6,000. Then declare goal as type Int and set it equal to 10,000.
-
-
+let steps2: Int = 1000
+let goal2: Int = 10000
 
 // Now create a constant percentOfGoal of type Double that equals the percent of the goal that has been reached so far. You'll need to convert your constants of type Int to be of type Double in your calculation.
+
+percentOfGoal = 10.00
